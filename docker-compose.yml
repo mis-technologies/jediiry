@@ -4,7 +4,7 @@ services:
   nuxt-app:
     build:
       context: . # Path to your Dockerfile (where the Dockerfile is located)
-      dockerfile: dockerfile # Specify the Dockerfile to use
+      dockerfile: Dockerfile # Specify the Dockerfile to use
     ports:
       - "3000:3000" # Map port 3000 on the host to port 3000 in the container
     environment:
