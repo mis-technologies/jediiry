@@ -31,7 +31,7 @@
               :type-interval="200"
               :replace-interval="100"
             >
-              <p class="main-font tw-text-5xl md:tw-text-8xl tw-text-primary">Developer
+              <p class="main-font tw-text-5xl md:tw-text-8xl tw-text-primary">Founder
               </p>
             </typewriter>
           </div>
@@ -52,8 +52,11 @@ export default Vue.extend({
   data() {
     return {
       replace: [
-        { from: "Developer", to: "Designer" },
-        // { from: "Designer", to: "Freelancer" },
+        { from: "Founder", to: "Dev Advocate" },
+        { from: "Dev Advocate", to: "Platform Engineer" },
+        { from: "Platform Engineer", to: "DevSecOps Engineer" },
+        { from: "DevSecOps Engineer", to: "AI Cloud Architect" },
+        { from: "AI Cloud Architect", to: "Founder" },
       ],
     };
   },

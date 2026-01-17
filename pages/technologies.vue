@@ -105,20 +105,25 @@ export default Vue.extend({
       index: 0,
       allTechs: [
         {
-          technology: "Python",
-          description: `I boasts an impressive 5 years of experience working with Python, utilizing popular frameworks such as FastAPI and Django. With a strong understanding of the language and its capabilities, I have delivered numerous successful projects, showcasing my ability to develop efficient and effective solutions. My expertise in Python and its frameworks has allowed me to create robust, scalable applications that meet the needs of clients and deliver exceptional results.`,
+          technology: "Platform Engineer",
+          description: `
+Platform Engineer with 8 years of experience leading the design, development, and operation of scalable cloud‑native platforms. I bring a strong leadership mindset to engineering, guiding teams in adopting best practices, improving reliability, and building automation that accelerates delivery. My work spans cloud architecture, Kubernetes orchestration, infrastructure‑as‑code, CI/CD automation, and backend engineering, enabling organisations to ship faster, operate more efficiently, and scale with confidence. I’m known for driving clarity in complex systems, mentoring engineers, and championing modern platform standards that elevate both team performance and product quality.
+`,
         },
         {
-          technology: "Typescript",
-          description: `I have 8 years of experience working with Typescript and have extensive experience with various frameworks such as Fastify, Express, Next.js, Vue.js, React.js, Three.js, Nuxt.js. I have used these frameworks to build a wide range of web applications, from simple single-page applications to complex, multi-tiered systems. My experience with these frameworks has given me a deep understanding of the JavaScript ecosystem and the ability to quickly evaluate and adopt new technologies as needed to meet the needs of my clients. Additionally, I am highly proficient in both server-side and client-side development, allowing me to build complete web solutions from start to finish.`,
+          technology: "AI Cloud Architect",
+          description: `
+AI Cloud Architect specialising in the design and delivery of scalable, cloud‑native platforms that power intelligent applications and modern distributed systems. Focused on architecting end‑to‑end AI solutions across major cloud providers, integrating compute, data, orchestration, and automation to support high‑performance workloads.
+
+Experience spans cloud architecture, distributed systems, serverless design, container orchestration, and AI/ML deployment pipelines. Skilled at creating holistic solutions that seamlessly connect user‑facing experiences with robust backend infrastructure, event‑driven systems, and cloud‑based AI services.
+
+Known for evaluating emerging technologies, adopting modern architectural patterns, and translating complex requirements into secure, scalable, and efficient cloud AI platforms. Work blends hands‑on engineering depth with architectural leadership, ensuring every solution is resilient, future‑ready, and aligned with long‑term business goals.          `,
         },
-        {
-          technology: "Golang",
-          description: `I have 3 years of experience working with Go programming language and using various frameworks such as gqlgen. Gqlgen is a GraphQL framework for Go that allows developers to quickly and easily build GraphQL APIs by generating the required boilerplate code. With my experience using gqlgen, I have been able to build highly scalable and efficient GraphQL APIs that meet the needs of my clients. Additionally, I have also developed a deep understanding of Go's standard library and its performance characteristics, allowing me to write optimized and performant code.`,
-        },
-        {
-          technology: "Solidity",
-          description: `I have 3 years of experience working with Solidity, the programming language used for developing smart contracts on the Ethereum blockchain. During this time, I have utilized various development tools and frameworks to create robust and secure smart contracts. My experience includes building scalable decentralized applications (dApps) and understanding the Ethereum Virtual Machine (EVM) to optimize contract performance. Additionally, I have developed a deep understanding of Solidity's best practices and performance considerations, allowing me to write efficient and secure smart contract code.`,
+               {
+          technology: "Blockchain",
+          description: `
+Blockchain Architect focused on designing secure, scalable, and production‑ready distributed ledger systems. Experienced in building end‑to‑end blockchain architectures across public, private, and hybrid networks, including smart‑contract platforms, decentralised applications, and Layer‑2 solutions. Skilled at integrating blockchain components with cloud‑native infrastructure, event‑driven systems, and modern DevOps practices. Known for strong architectural leadership, deep understanding of emerging protocols, and the ability to deliver high‑throughput, interoperable, and future‑ready blockchain platforms.
+`,
         },
       ],
     };

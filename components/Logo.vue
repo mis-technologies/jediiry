@@ -1,6 +1,6 @@
 <template>
   <div
-    class="tw-flex tw-justify-center tw-w-full tw-py-3 tw-fixed tw-z-50"
+    class="tw-flex tw-justify-center tw-w-full tw-py-1 tw-fixed tw-z-50"
     :class="[nav, customClass]"
   >
     <div class="tw-flex tw-justify-between tw-items-center stable-alignment">
@@ -142,7 +142,7 @@
             "
           >
             <div class="">
-              <span>Hire Me</span>
+              <span>Contact</span>
             </div>
           </nuxt-link>
           <Social />

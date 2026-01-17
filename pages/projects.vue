@@ -19,15 +19,9 @@
       >
         <div class="md:tw-pt-10 tw-col-span-5 tw-col-start-2 tw-text-center">
           <div>
-            <typewriter
-              :replace="replace"
-              :type-interval="200"
-              :replace-interval="500"
-            >
               <p class="main-font tw-text-5xl md:tw-text-8xl tw-text-primary">
-                Jobs
+                Projects
               </p>
-            </typewriter>
           </div>
           <p class="tw-text-white tw-pt-6">
             I have completed multiple successful projects, showcasing my expertise in delivering high-quality, innovative and user-friendly websites.
