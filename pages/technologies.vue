@@ -80,7 +80,7 @@ export default Vue.extend({
         {
           technology: "Platform Engineer",
           description: `
-          A Platform Engineer with eight years of experience building and operating scalable cloud‑native systems. Skilled in cloud architecture, Kubernetes, infrastructure‑as‑code, CI/CD automation, and backend engineering, with a strong focus on leadership, reliability, and driving engineering best practices.
+          A Platform Engineer with eight years of experience building scalable cloud‑native systems, specialising in cloud architecture, Kubernetes, IaC, CI/CD, and backend engineering.
           `,
         },
         {
