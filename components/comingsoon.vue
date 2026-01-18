@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import defaultSavings from "~/assets/images/bursary.png";
+import defaultSavings from "~/assets/images/spoint.png";
 import defaultPanza from "~/assets/images/sproutly.png";
 import defaultMother from "~/assets/images/shikaan.png";
 import chop from "~/assets/images/hupchop.png";
@@ -46,11 +46,11 @@ export default {
       default: () => {
         return [
           {
-            badge: "2022",
-            content: "Bursary",
-            body: "SproutlyAfrica test contestst",
+            badge: "2024",
+            content: "Spoint Nigeria",
+            body: "Money across borders",
             image: defaultSavings,
-            url: "https://bursary.ng/",
+            url: "https://spoint-website-production.up.railway.app/en",
           },
           {
             badge: "2022",
