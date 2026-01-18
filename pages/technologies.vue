@@ -80,20 +80,20 @@ export default Vue.extend({
         {
           technology: "Platform Engineer",
           description: `
-Platform Engineer with 8 years of experience leading the design, development, and operation of scalable cloud‑native platforms. I bring a strong leadership mindset to engineering, guiding teams in adopting best practices, improving reliability, and building automation that accelerates delivery. My work spans cloud architecture, Kubernetes orchestration, infrastructure‑as‑code, CI/CD automation, and backend engineering.
-`,
+          A Platform Engineer with eight years of experience building and operating scalable cloud‑native systems. Skilled in cloud architecture, Kubernetes, infrastructure‑as‑code, CI/CD automation, and backend engineering, with a strong focus on leadership, reliability, and driving engineering best practices.
+          `,
         },
         {
           technology: "AI Cloud Architect",
           description: `
-AI Cloud Architect specialising in scalable, cloud‑native platforms powering intelligent applications. Experienced in distributed systems, serverless design, container orchestration, and AI/ML deployment pipelines.
-`,
+          AI Cloud Architect specialising in scalable, cloud‑native platforms powering intelligent applications. Experienced in distributed systems, serverless design, container orchestration, and AI/ML deployment pipelines.
+          `,
         },
         {
           technology: "Blockchain",
           description: `
-Blockchain Architect focused on secure, scalable distributed ledger systems. Skilled in smart‑contract platforms, decentralised applications, and Layer‑2 solutions.
-`,
+          Blockchain Architect focused on secure, scalable distributed ledger systems. Skilled in smart‑contract platforms, decentralised applications, and Layer‑2 solutions.
+          `,
         },
       ],
     };
