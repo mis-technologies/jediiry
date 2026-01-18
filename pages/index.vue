@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-min-h-screen main-bg">
+  <div class="tw-h-screen main-bg">
     <!-- <sample></sample> -->
     <Logo></Logo>
     <div
