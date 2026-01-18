@@ -1,128 +1,98 @@
 <template>
-  <div class="tw-bg-secondary">
+  <div class="tw-bg-secondary tw-h-screen tw-flex tw-flex-col">
     <div
       data-aos="fade-down"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="200"
+      class="tw-flex-1 tw-flex tw-flex-col"
     >
       <Logo color="tw-text-white" />
 
-      <div class="tw-grid tw-grid-cols-7 tw-h-screen  tw-w-10/12 tw-mx-auto md:tw-mx-0 md:tw-w-full">
+      <!-- MAIN GRID -->
+      <div class="tw-grid tw-grid-cols-7 tw-h-full tw-w-11/12 tw-mx-auto md:tw-w-full">
+
+        <!-- LEFT SECTION -->
         <div
-          class=" 
-          tw-mt-8
-          md:tw-mt-0
-            tw-col-span-7
-            md:tw-col-span-3
-            tw-bg-secondary
-            tw-grid
-            tw-grid-cols-5
+          class="
+            tw-col-span-7 md:tw-col-span-3
+            tw-grid tw-grid-cols-5
+            tw-items-center
             tw-justify-center
-            md:tw-items-center
-            tw-z-40
+            tw-h-full
           "
         >
           <div
             class="
-              tw-space-y-12 tw-pt-32 tw-pb-5
-              md:tw-col-start-2
-              tw-col-span-5
-              md:tw-col-span-3
-               tw-text-center
-               md:tw-text-left
+              tw-col-span-5 md:tw-col-start-2 md:tw-col-span-3
+              tw-text-center md:tw-text-left
+              tw-space-y-8
+              tw-py-10 md:tw-py-0
             "
           >
-            <p class="main-font tw-text-5xl tw-text-primary">
-              {{ allTechs[index]["technology"] }}
+            <!-- TECHNOLOGY TITLE -->
+            <p class="main-font tw-text-3xl sm:tw-text-4xl md:tw-text-5xl lg:tw-text-6xl tw-text-primary">
+              {{ allTechs[index].technology }}
             </p>
 
-            <p class="tw-text-white">
-              {{ allTechs[index]["description"] }}
+            <!-- DESCRIPTION -->
+            <p class="tw-text-white tw-text-sm sm:tw-text-base md:tw-text-lg tw-leading-relaxed">
+              {{ allTechs[index].description }}
             </p>
 
-            <p
-              class="
-                tw-group tw-text-2xl
-                hover:tw-text-white
-                tw-text-complimentry tw-text-right
-              "
-            >
+            <!-- NAVIGATION ARROWS -->
+            <p class="tw-text-right tw-text-2xl tw-text-complimentry tw-group">
               <i
                 v-if="index > 0"
                 @click.prevent="decreaseIndex"
-                class="
-                  tw-text-right
-                  tw-p-3
-                  tw-bg-gray-600
-                  tw-rounded-full
-                  tw-cursor-pointer
-                  bx
-                  hover:tw-text-complimentry
-                  bx-left-arrow-alt
-                  tw-text-primary
-                "
+                class="bx bx-left-arrow-alt tw-p-3 tw-bg-gray-600 tw-rounded-full tw-cursor-pointer tw-text-primary hover:tw-text-complimentry"
               ></i>
+
               <i
                 v-if="index < allTechs.length - 1"
                 @click.prevent="increaseIndex"
-                class="
-                  tw-text-right
-                  tw-p-3
-                  tw-bg-gray-600
-                  tw-rounded-full
-                  tw-cursor-pointer
-                  bx
-                  hover:tw-text-complimentry
-                  bx-right-arrow-alt
-                  tw-text-primary
-                "
+                class="bx bx-right-arrow-alt tw-p-3 tw-bg-gray-600 tw-rounded-full tw-cursor-pointer tw-text-primary hover:tw-text-complimentry"
               ></i>
             </p>
           </div>
         </div>
+
+        <!-- RIGHT SECTION (IMAGE / ANIMATION) -->
         <div
-          class="
-            tw-hidden
-            md:tw-block
-            tw-col-span-7
-            md:tw-col-span-4
-            tw-relative
-          "
+          class="tw-hidden md:tw-block tw-col-span-7 md:tw-col-span-4 tw-relative tw-h-full"
         >
-          <alltech></alltech>
+          <alltech />
         </div>
+
       </div>
     </div>
   </div>
 </template>
+
 <script lang="ts">
 import Vue from "vue";
+
 export default Vue.extend({
   name: "project",
   data() {
     return {
-      replace: [{ from: "A Software Engineer", to: "A Product Designer" }],
       index: 0,
       allTechs: [
         {
           technology: "Platform Engineer",
           description: `
-Platform Engineer with 8 years of experience leading the design, development, and operation of scalable cloud‑native platforms. I bring a strong leadership mindset to engineering, guiding teams in adopting best practices, improving reliability, and building automation that accelerates delivery. My work spans cloud architecture, Kubernetes orchestration, infrastructure‑as‑code, CI/CD automation, and backend engineering, enabling organisations to ship faster, operate more efficiently, and scale with confidence. I’m known for driving clarity in complex systems, mentoring engineers, and championing modern platform standards that elevate both team performance and product quality.
+Platform Engineer with 8 years of experience leading the design, development, and operation of scalable cloud‑native platforms. I bring a strong leadership mindset to engineering, guiding teams in adopting best practices, improving reliability, and building automation that accelerates delivery. My work spans cloud architecture, Kubernetes orchestration, infrastructure‑as‑code, CI/CD automation, and backend engineering.
 `,
         },
         {
           technology: "AI Cloud Architect",
           description: `
-AI Cloud Architect specialising in the design and delivery of scalable, cloud‑native platforms that power intelligent applications and modern distributed systems. Focused on architecting end‑to‑end AI solutions across major cloud providers, integrating compute, data, orchestration, and automation to support high‑performance workloads.
-
-Experience spans cloud architecture, distributed systems, serverless design, container orchestration, and AI/ML deployment pipelines. Skilled at creating holistic solutions that seamlessly connect user‑facing experiences with robust backend infrastructure, event‑driven systems, and cloud‑based AI services.
-
-Known for evaluating emerging technologies, adopting modern architectural patterns, and translating complex requirements into secure, scalable, and efficient cloud AI platforms. Work blends hands‑on engineering depth with architectural leadership, ensuring every solution is resilient, future‑ready, and aligned with long‑term business goals.          `,
+AI Cloud Architect specialising in scalable, cloud‑native platforms powering intelligent applications. Experienced in distributed systems, serverless design, container orchestration, and AI/ML deployment pipelines.
+`,
         },
-               {
+        {
           technology: "Blockchain",
           description: `
-Blockchain Architect focused on designing secure, scalable, and production‑ready distributed ledger systems. Experienced in building end‑to‑end blockchain architectures across public, private, and hybrid networks, including smart‑contract platforms, decentralised applications, and Layer‑2 solutions. Skilled at integrating blockchain components with cloud‑native infrastructure, event‑driven systems, and modern DevOps practices. Known for strong architectural leadership, deep understanding of emerging protocols, and the ability to deliver high‑throughput, interoperable, and future‑ready blockchain platforms.
+Blockchain Architect focused on secure, scalable distributed ledger systems. Skilled in smart‑contract platforms, decentralised applications, and Layer‑2 solutions.
 `,
         },
       ],
@@ -130,15 +100,20 @@ Blockchain Architect focused on designing secure, scalable, and production‑rea
   },
   methods: {
     decreaseIndex() {
-      if (this.index > 0) {
-        this.index = this.index - 1;
-      }
+      if (this.index > 0) this.index--;
     },
     increaseIndex() {
-      if (this.index < this.allTechs.length - 1) {
-        this.index = this.index + 1;
-      }
+      if (this.index < this.allTechs.length - 1) this.index++;
     },
   },
 });
 </script>
+
+<style scoped>
+/* Optional: improve readability on very small screens */
+@media (max-width: 480px) {
+  p {
+    line-height: 1.4;
+  }
+}
+</style>
