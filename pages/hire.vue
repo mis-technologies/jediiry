@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-h-screen main-bg">
+  <div class="tw-min-h-screen main-bg">
     <Logo />
     <div
       class="stable-alignment tw-h-full tw-pt-36 tw-pb-10 md:tw-py-48 tw-flex tw-flex-col tw-justify-between tw-space-y-24"

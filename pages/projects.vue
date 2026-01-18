@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-min-h-screen md:tw-h-screen main-bg">
+  <div class="tw-min-h-screen md:tw-min-h-screen main-bg">
     <Logo />
     <div
       data-aos="fade-down"
